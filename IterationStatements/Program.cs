@@ -30,13 +30,13 @@ namespace IterationStatements
                     // Hint: reference num inside of the Add method's parentheses
                 numbers.Add(num);
 
-            } while (num <= 100);
+            } while (num < 100);
 
 
 
             // Create a while loop
             // <--- While num is less than 200
-            while (num <= 200)
+            while (num < 200)
             {
                 // Increment num by 1
                 num++;
@@ -71,10 +71,10 @@ namespace IterationStatements
             // Decrement i by 1
 
             //start for loop here
-            for (int i = 199; i <= numbers.Count && i >= 0; --i)
+            for (int i = numbers.Count - 1; i >= 0; i--)
             {
                 // place numbers[i] inside of the Console.WriteLine() method
-                Console.WriteLine($"{i}");
+                Console.WriteLine($"{numbers[i]}");
             }
 
             //------------End of exercise
